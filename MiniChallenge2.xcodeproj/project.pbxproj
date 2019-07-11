@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */; };
+		B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFA122D75DA900D38DDB /* ViewController.swift */; };
+		B14ABFA522D75DA900D38DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA322D75DA900D38DDB /* Main.storyboard */; };
+		B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA622D75DA900D38DDB /* Assets.xcassets */; };
+		B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */; };
+		B14ABFB522D75DAA00D38DDB /* MiniChallenge2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFB422D75DAA00D38DDB /* MiniChallenge2Tests.swift */; };
+		B14ABFC022D75DAA00D38DDB /* MiniChallenge2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFBF22D75DAA00D38DDB /* MiniChallenge2UITests.swift */; };
+		B14ABFC522D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B14ABFC422D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app */; };
+		B14ABFCB22D75DAA00D38DDB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFC922D75DAA00D38DDB /* Interface.storyboard */; };
+		B14ABFCD22D75DAA00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFCC22D75DAA00D38DDB /* Assets.xcassets */; };
+		B14ABFD422D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B14ABFD322D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B14ABFD922D75DAA00D38DDB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFD822D75DAA00D38DDB /* InterfaceController.swift */; };
+		B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */; };
+		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
+		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B14ABFB122D75DAA00D38DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14ABF9422D75DA900D38DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14ABF9B22D75DA900D38DDB;
+			remoteInfo = MiniChallenge2;
+		};
+		B14ABFBC22D75DAA00D38DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14ABF9422D75DA900D38DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14ABF9B22D75DA900D38DDB;
+			remoteInfo = MiniChallenge2;
+		};
+		B14ABFC622D75DAA00D38DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14ABF9422D75DA900D38DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14ABFC322D75DAA00D38DDB;
+			remoteInfo = "MiniChallenge2 WatchKit App";
+		};
+		B14ABFD522D75DAA00D38DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14ABF9422D75DA900D38DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14ABFD222D75DAA00D38DDB;
+			remoteInfo = "MiniChallenge2 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B14ABFE722D75DAB00D38DDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B14ABFD422D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFEB22D75DAB00D38DDB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B14ABFC522D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B14ABF9C22D75DA900D38DDB /* MiniChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B14ABFA122D75DA900D38DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B14ABFA422D75DA900D38DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B14ABFA622D75DA900D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B14ABFA922D75DA900D38DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B14ABFAB22D75DA900D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14ABFB022D75DAA00D38DDB /* MiniChallenge2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14ABFB422D75DAA00D38DDB /* MiniChallenge2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge2Tests.swift; sourceTree = "<group>"; };
+		B14ABFB622D75DAA00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14ABFBB22D75DAA00D38DDB /* MiniChallenge2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14ABFBF22D75DAA00D38DDB /* MiniChallenge2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge2UITests.swift; sourceTree = "<group>"; };
+		B14ABFC122D75DAA00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14ABFC422D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniChallenge2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14ABFCA22D75DAA00D38DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B14ABFCC22D75DAA00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B14ABFCE22D75DAA00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14ABFD322D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MiniChallenge2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14ABFD822D75DAA00D38DDB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B14ABF9922D75DA900D38DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFAD22D75DAA00D38DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFB822D75DAA00D38DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFD022D75DAA00D38DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B14ABF9322D75DA900D38DDB = {
+			isa = PBXGroup;
+			children = (
+				B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */,
+				B14ABFB322D75DAA00D38DDB /* MiniChallenge2Tests */,
+				B14ABFBE22D75DAA00D38DDB /* MiniChallenge2UITests */,
+				B14ABFC822D75DAA00D38DDB /* MiniChallenge2 WatchKit App */,
+				B14ABFD722D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */,
+				B14ABF9D22D75DA900D38DDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B14ABF9D22D75DA900D38DDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABF9C22D75DA900D38DDB /* MiniChallenge2.app */,
+				B14ABFB022D75DAA00D38DDB /* MiniChallenge2Tests.xctest */,
+				B14ABFBB22D75DAA00D38DDB /* MiniChallenge2UITests.xctest */,
+				B14ABFC422D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app */,
+				B14ABFD322D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */,
+				B14ABFA122D75DA900D38DDB /* ViewController.swift */,
+				B14ABFA322D75DA900D38DDB /* Main.storyboard */,
+				B14ABFA622D75DA900D38DDB /* Assets.xcassets */,
+				B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */,
+				B14ABFAB22D75DA900D38DDB /* Info.plist */,
+			);
+			path = MiniChallenge2;
+			sourceTree = "<group>";
+		};
+		B14ABFB322D75DAA00D38DDB /* MiniChallenge2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABFB422D75DAA00D38DDB /* MiniChallenge2Tests.swift */,
+				B14ABFB622D75DAA00D38DDB /* Info.plist */,
+			);
+			path = MiniChallenge2Tests;
+			sourceTree = "<group>";
+		};
+		B14ABFBE22D75DAA00D38DDB /* MiniChallenge2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABFBF22D75DAA00D38DDB /* MiniChallenge2UITests.swift */,
+				B14ABFC122D75DAA00D38DDB /* Info.plist */,
+			);
+			path = MiniChallenge2UITests;
+			sourceTree = "<group>";
+		};
+		B14ABFC822D75DAA00D38DDB /* MiniChallenge2 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABFC922D75DAA00D38DDB /* Interface.storyboard */,
+				B14ABFCC22D75DAA00D38DDB /* Assets.xcassets */,
+				B14ABFCE22D75DAA00D38DDB /* Info.plist */,
+			);
+			path = "MiniChallenge2 WatchKit App";
+			sourceTree = "<group>";
+		};
+		B14ABFD722D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B14ABFD822D75DAA00D38DDB /* InterfaceController.swift */,
+				B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */,
+				B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */,
+				B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */,
+				B14ABFE022D75DAB00D38DDB /* Info.plist */,
+				B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */,
+			);
+			path = "MiniChallenge2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B14ABF9B22D75DA900D38DDB /* MiniChallenge2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14ABFEC22D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2" */;
+			buildPhases = (
+				B14ABF9822D75DA900D38DDB /* Sources */,
+				B14ABF9922D75DA900D38DDB /* Frameworks */,
+				B14ABF9A22D75DA900D38DDB /* Resources */,
+				B14ABFEB22D75DAB00D38DDB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B14ABFC722D75DAA00D38DDB /* PBXTargetDependency */,
+			);
+			name = MiniChallenge2;
+			productName = MiniChallenge2;
+			productReference = B14ABF9C22D75DA900D38DDB /* MiniChallenge2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B14ABFAF22D75DAA00D38DDB /* MiniChallenge2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14ABFEF22D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2Tests" */;
+			buildPhases = (
+				B14ABFAC22D75DAA00D38DDB /* Sources */,
+				B14ABFAD22D75DAA00D38DDB /* Frameworks */,
+				B14ABFAE22D75DAA00D38DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B14ABFB222D75DAA00D38DDB /* PBXTargetDependency */,
+			);
+			name = MiniChallenge2Tests;
+			productName = MiniChallenge2Tests;
+			productReference = B14ABFB022D75DAA00D38DDB /* MiniChallenge2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B14ABFBA22D75DAA00D38DDB /* MiniChallenge2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14ABFF222D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2UITests" */;
+			buildPhases = (
+				B14ABFB722D75DAA00D38DDB /* Sources */,
+				B14ABFB822D75DAA00D38DDB /* Frameworks */,
+				B14ABFB922D75DAA00D38DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B14ABFBD22D75DAA00D38DDB /* PBXTargetDependency */,
+			);
+			name = MiniChallenge2UITests;
+			productName = MiniChallenge2UITests;
+			productReference = B14ABFBB22D75DAA00D38DDB /* MiniChallenge2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B14ABFC322D75DAA00D38DDB /* MiniChallenge2 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14ABFE822D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2 WatchKit App" */;
+			buildPhases = (
+				B14ABFC222D75DAA00D38DDB /* Resources */,
+				B14ABFE722D75DAB00D38DDB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B14ABFD622D75DAA00D38DDB /* PBXTargetDependency */,
+			);
+			name = "MiniChallenge2 WatchKit App";
+			productName = "MiniChallenge2 WatchKit App";
+			productReference = B14ABFC422D75DAA00D38DDB /* MiniChallenge2 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B14ABFD222D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14ABFE422D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2 WatchKit Extension" */;
+			buildPhases = (
+				B14ABFCF22D75DAA00D38DDB /* Sources */,
+				B14ABFD022D75DAA00D38DDB /* Frameworks */,
+				B14ABFD122D75DAA00D38DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MiniChallenge2 WatchKit Extension";
+			productName = "MiniChallenge2 WatchKit Extension";
+			productReference = B14ABFD322D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B14ABF9422D75DA900D38DDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Michael Louis";
+				TargetAttributes = {
+					B14ABF9B22D75DA900D38DDB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B14ABFAF22D75DAA00D38DDB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = B14ABF9B22D75DA900D38DDB;
+					};
+					B14ABFBA22D75DAA00D38DDB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = B14ABF9B22D75DA900D38DDB;
+					};
+					B14ABFC322D75DAA00D38DDB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B14ABFD222D75DAA00D38DDB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B14ABF9722D75DA900D38DDB /* Build configuration list for PBXProject "MiniChallenge2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B14ABF9322D75DA900D38DDB;
+			productRefGroup = B14ABF9D22D75DA900D38DDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B14ABF9B22D75DA900D38DDB /* MiniChallenge2 */,
+				B14ABFAF22D75DAA00D38DDB /* MiniChallenge2Tests */,
+				B14ABFBA22D75DAA00D38DDB /* MiniChallenge2UITests */,
+				B14ABFC322D75DAA00D38DDB /* MiniChallenge2 WatchKit App */,
+				B14ABFD222D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B14ABF9A22D75DA900D38DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
+				B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */,
+				B14ABFA522D75DA900D38DDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFAE22D75DAA00D38DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFB922D75DAA00D38DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFC222D75DAA00D38DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFCD22D75DAA00D38DDB /* Assets.xcassets in Resources */,
+				B14ABFCB22D75DAA00D38DDB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFD122D75DAA00D38DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B14ABF9822D75DA900D38DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
+				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFAC22D75DAA00D38DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFB522D75DAA00D38DDB /* MiniChallenge2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFB722D75DAA00D38DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFC022D75DAA00D38DDB /* MiniChallenge2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14ABFCF22D75DAA00D38DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */,
+				B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */,
+				B14ABFD922D75DAA00D38DDB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B14ABFB222D75DAA00D38DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B14ABF9B22D75DA900D38DDB /* MiniChallenge2 */;
+			targetProxy = B14ABFB122D75DAA00D38DDB /* PBXContainerItemProxy */;
+		};
+		B14ABFBD22D75DAA00D38DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B14ABF9B22D75DA900D38DDB /* MiniChallenge2 */;
+			targetProxy = B14ABFBC22D75DAA00D38DDB /* PBXContainerItemProxy */;
+		};
+		B14ABFC722D75DAA00D38DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B14ABFC322D75DAA00D38DDB /* MiniChallenge2 WatchKit App */;
+			targetProxy = B14ABFC622D75DAA00D38DDB /* PBXContainerItemProxy */;
+		};
+		B14ABFD622D75DAA00D38DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B14ABFD222D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */;
+			targetProxy = B14ABFD522D75DAA00D38DDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B14ABFA322D75DA900D38DDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14ABFA422D75DA900D38DDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14ABFA922D75DA900D38DDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B14ABFC922D75DAA00D38DDB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14ABFCA22D75DAA00D38DDB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B14ABFE222D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B14ABFE322D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B14ABFE522D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B14ABFE622D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B14ABFE922D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
+				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B14ABFEA22D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
+				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B14ABFED22D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B14ABFEE22D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B14ABFF022D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniChallenge2.app/MiniChallenge2";
+			};
+			name = Debug;
+		};
+		B14ABFF122D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniChallenge2.app/MiniChallenge2";
+			};
+			name = Release;
+		};
+		B14ABFF322D75DAB00D38DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniChallenge2;
+			};
+			name = Debug;
+		};
+		B14ABFF422D75DAB00D38DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniChallenge2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B14ABF9722D75DA900D38DDB /* Build configuration list for PBXProject "MiniChallenge2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFE222D75DAB00D38DDB /* Debug */,
+				B14ABFE322D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14ABFE422D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFE522D75DAB00D38DDB /* Debug */,
+				B14ABFE622D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14ABFE822D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFE922D75DAB00D38DDB /* Debug */,
+				B14ABFEA22D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14ABFEC22D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFED22D75DAB00D38DDB /* Debug */,
+				B14ABFEE22D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14ABFEF22D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFF022D75DAB00D38DDB /* Debug */,
+				B14ABFF122D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14ABFF222D75DAB00D38DDB /* Build configuration list for PBXNativeTarget "MiniChallenge2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14ABFF322D75DAB00D38DDB /* Debug */,
+				B14ABFF422D75DAB00D38DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B14ABF9422D75DA900D38DDB /* Project object */;
+}
