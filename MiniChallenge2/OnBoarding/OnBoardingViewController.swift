@@ -8,14 +8,22 @@
 
 import UIKit
 
-class OnBoardingViewController: UIViewController {
+class OnBoardingViewController: UIViewController , UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    var slides:[OnboardingSlide] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scrollView.delegate = self
+//        
+//        slides = createSlides()
+//        setupSlideScrollView(slides: slides)
         
+        pageControl.numberOfPages = slides.count
+        pageControl.currentPage = 0 
     }
     
 

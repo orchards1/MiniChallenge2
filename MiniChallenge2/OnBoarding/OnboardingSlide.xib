@@ -45,6 +45,11 @@
                 <constraint firstItem="9ei-jx-4zi" firstAttribute="top" secondItem="w2a-0u-Lha" secondAttribute="bottom" constant="22" id="uO3-cE-itf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="UKi-CY-igy" id="Cjo-LY-3q0"/>
+                <outlet property="labelDesc" destination="9ei-jx-4zi" id="VwY-xA-kNm"/>
+                <outlet property="lableTitle" destination="w2a-0u-Lha" id="pat-ah-wYJ"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
