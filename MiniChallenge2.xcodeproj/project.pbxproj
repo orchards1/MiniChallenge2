@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */; };
+		B13B74BF22D8B5A900812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74BE22D8B5A900812DE8 /* MountainsDetail.storyboard */; };
+		B13B74C122D8B5B800812DE8 /* MountainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C022D8B5B800812DE8 /* MountainDetailViewController.swift */; };
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
 		B142A97222D87FBB0071D2DA /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142A97122D87FBB0071D2DA /* Slide.swift */; };
 		B142A97422D87FC80071D2DA /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B142A97322D87FC80071D2DA /* Slide.xib */; };
@@ -87,6 +89,8 @@
 
 /* Begin PBXFileReference section */
 		4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsListViewController.swift; sourceTree = "<group>"; };
+		B13B74BE22D8B5A900812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MountainsDetail.storyboard; path = ../../../MountainsDetail.storyboard; sourceTree = "<group>"; };
+		B13B74C022D8B5B800812DE8 /* MountainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MountainDetailViewController.swift; path = ../../../MountainDetailViewController.swift; sourceTree = "<group>"; };
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
 		B142A97122D87FBB0071D2DA /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		B142A97322D87FC80071D2DA /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 		B142A96E22D874B40071D2DA /* MountainsDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B13B74BE22D8B5A900812DE8 /* MountainsDetail.storyboard */,
+				B13B74C022D8B5B800812DE8 /* MountainDetailViewController.swift */,
 			);
 			path = MountainsDetail;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 			files = (
 				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
+				B13B74BF22D8B5A900812DE8 /* MountainsDetail.storyboard in Resources */,
 				B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */,
 				B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */,
 				B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */,
@@ -452,6 +459,7 @@
 			files = (
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
 				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
+				B13B74C122D8B5B800812DE8 /* MountainDetailViewController.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
 				4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */,
