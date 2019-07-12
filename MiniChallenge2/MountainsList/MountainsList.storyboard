@@ -21,9 +21,6 @@
                         <viewLayoutGuide key="safeArea" id="lYk-0X-YIO"/>
                     </view>
                     <navigationItem key="navigationItem" id="Anm-Qn-te5"/>
-                    <connections>
-                        <segue destination="xG7-JT-5vQ" kind="show" id="Zuh-xk-Go4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2K-mZ-csu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,14 +43,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPj-FM-oJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="273.91304347826087" y="-416.51785714285711"/>
-        </scene>
-        <!--MountainsDetail-->
-        <scene sceneID="L6F-sv-eZ7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MountainsDetail" id="xG7-JT-5vQ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RCw-dn-Kuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2248" y="-417"/>
         </scene>
     </scenes>
 </document>

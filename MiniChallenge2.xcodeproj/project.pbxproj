@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
-		B142A96D22D874AC0071D2DA /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96C22D874AC0071D2DA /* MountainsDetail.storyboard */; };
 		B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */; };
 		B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFA122D75DA900D38DDB /* ViewController.swift */; };
 		B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA322D75DA900D38DDB /* OnBoarding.storyboard */; };
@@ -87,7 +86,6 @@
 
 /* Begin PBXFileReference section */
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
-		B142A96C22D874AC0071D2DA /* MountainsDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B14ABF9C22D75DA900D38DDB /* MiniChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14ABFA122D75DA900D38DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		B142A96E22D874B40071D2DA /* MountainsDetail */ = {
 			isa = PBXGroup;
 			children = (
-				B142A96C22D874AC0071D2DA /* MountainsDetail.storyboard */,
 			);
 			path = MountainsDetail;
 			sourceTree = "<group>";
@@ -406,7 +403,6 @@
 			files = (
 				B14AC00622D86C4A00D38DDB /* OnboardingSlide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
-				B142A96D22D874AC0071D2DA /* MountainsDetail.storyboard in Resources */,
 				B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */,
 				B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */,
 				B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */,
@@ -740,7 +736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -758,7 +754,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
