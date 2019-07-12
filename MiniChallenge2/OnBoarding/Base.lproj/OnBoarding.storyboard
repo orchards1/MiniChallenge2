@@ -13,7 +13,7 @@
         <!--Onboarding Screen-->
         <scene sceneID="ctJ-h8-gfP">
             <objects>
-                <viewController id="bME-Wr-J1P" userLabel="Onboarding Screen" customClass="OnboardingViewController" customModule="MiniChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboarding" id="bME-Wr-J1P" userLabel="Onboarding Screen" customClass="OnboardingViewController" customModule="MiniChallenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rsM-Dh-BK2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="zb7-PF-OQp" kind="show" id="zhd-FB-gVu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,6 +62,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vG5-Dj-nLa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1421.7391304347827" y="144.64285714285714"/>
+        </scene>
+        <!--MountainsList-->
+        <scene sceneID="AY3-4b-K6l">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MountainsList" storyboardName="MountainsList" id="zb7-PF-OQp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNG-2P-9zY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120" y="-50"/>
         </scene>
     </scenes>
 </document>

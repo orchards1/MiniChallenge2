@@ -13,7 +13,6 @@
         <!--Mountain-->
         <scene sceneID="NRD-Ur-fFG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V2K-mZ-csu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6gM-I1-d39" customClass="MountainsListViewController" customModule="MiniChallenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8r-vf-epX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -52,14 +51,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mountain" id="Anm-Qn-te5"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2K-mZ-csu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1173.913043478261" y="-47.544642857142854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgJ-8w-Xsi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UPj-FM-oJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Bq-68-ZpL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MountainsList" automaticallyAdjustsScrollViewInsets="NO" id="1Bq-68-ZpL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fcq-3c-8kP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -70,6 +69,7 @@
                         <segue destination="6gM-I1-d39" kind="relationship" relationship="rootViewController" id="0Dh-j3-56e"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPj-FM-oJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="273.91304347826087" y="-416.51785714285711"/>
         </scene>

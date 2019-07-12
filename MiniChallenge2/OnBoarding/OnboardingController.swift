@@ -10,7 +10,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextButton: UIButton!
     
-    
     var slides:[Slide] = [];
     
     override func viewDidLoad() {
