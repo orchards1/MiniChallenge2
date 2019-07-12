@@ -16,6 +16,9 @@ class MountainsListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func setupNavBar(){
+        
+    }
 
     /*
     // MARK: - Navigation
