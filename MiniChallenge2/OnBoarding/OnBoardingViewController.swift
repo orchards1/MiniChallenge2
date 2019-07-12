@@ -23,7 +23,7 @@ class OnBoardingViewController: UIViewController , UIScrollViewDelegate {
 //        setupSlideScrollView(slides: slides)
         
         pageControl.numberOfPages = slides.count
-        pageControl.currentPage = 0 
+        pageControl.currentPage = 3
     }
     
 
