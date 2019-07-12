@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
+		B142A97222D87FBB0071D2DA /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142A97122D87FBB0071D2DA /* Slide.swift */; };
+		B142A97422D87FC80071D2DA /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B142A97322D87FC80071D2DA /* Slide.xib */; };
+		B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142A97522D880ED0071D2DA /* OnboardingController.swift */; };
 		B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */; };
 		B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFA122D75DA900D38DDB /* ViewController.swift */; };
 		B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA322D75DA900D38DDB /* OnBoarding.storyboard */; };
@@ -23,9 +26,6 @@
 		B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */; };
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
-		B14AC00222D86B6400D38DDB /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14AC00122D86B6400D38DDB /* OnBoardingViewController.swift */; };
-		B14AC00422D86C2B00D38DDB /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14AC00322D86C2B00D38DDB /* OnboardingSlide.swift */; };
-		B14AC00622D86C4A00D38DDB /* OnboardingSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14AC00522D86C4A00D38DDB /* OnboardingSlide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +86,9 @@
 
 /* Begin PBXFileReference section */
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
+		B142A97122D87FBB0071D2DA /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		B142A97322D87FC80071D2DA /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		B142A97522D880ED0071D2DA /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		B14ABF9C22D75DA900D38DDB /* MiniChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14ABFA122D75DA900D38DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,9 +113,6 @@
 		B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		B14AC00122D86B6400D38DDB /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		B14AC00322D86C2B00D38DDB /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
-		B14AC00522D86C4A00D38DDB /* OnboardingSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingSlide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,9 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				B14ABFA322D75DA900D38DDB /* OnBoarding.storyboard */,
-				B14AC00322D86C2B00D38DDB /* OnboardingSlide.swift */,
-				B14AC00522D86C4A00D38DDB /* OnboardingSlide.xib */,
-				B14AC00122D86B6400D38DDB /* OnBoardingViewController.swift */,
+				B142A97522D880ED0071D2DA /* OnboardingController.swift */,
+				B142A97122D87FBB0071D2DA /* Slide.swift */,
+				B142A97322D87FC80071D2DA /* Slide.xib */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14AC00622D86C4A00D38DDB /* OnboardingSlide.xib in Resources */,
+				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
 				B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */,
 				B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */,
@@ -447,8 +447,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14AC00422D86C2B00D38DDB /* OnboardingSlide.swift in Sources */,
-				B14AC00222D86B6400D38DDB /* OnBoardingViewController.swift in Sources */,
+				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
+				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
 			);
