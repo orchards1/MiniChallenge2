@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bME-Wr-J1P">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Onboarding Screen-->
+        <scene sceneID="ctJ-h8-gfP">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="bME-Wr-J1P" userLabel="Onboarding Screen" customClass="OnBoardingViewController" customModule="MiniChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsM-Dh-BK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-mc-Q9h">
+                                <rect key="frame" x="125.5" y="738" width="163" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="0gc-Ca-PE6"/>
+                                    <constraint firstAttribute="width" constant="163" id="YTV-gP-FJs"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NEXT"/>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-wY-GjR">
+                                <rect key="frame" x="179.5" y="800" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiP-Ki-OYE" customClass="UICollectionView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KiP-Ki-OYE" secondAttribute="bottom" id="Ogf-a3-cN7"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="centerX" secondItem="1U2-wY-GjR" secondAttribute="centerX" id="TAY-6Y-vVQ"/>
+                            <constraint firstItem="KiP-Ki-OYE" firstAttribute="top" secondItem="rsM-Dh-BK2" secondAttribute="top" id="alb-cT-yny"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="694" id="cBP-fJ-spP"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="bottom" secondItem="1U2-wY-GjR" secondAttribute="bottom" constant="25" id="iUg-an-tmx"/>
+                            <constraint firstItem="KiP-Ki-OYE" firstAttribute="trailing" secondItem="0ww-Ip-HVf" secondAttribute="trailing" id="jWB-E0-EX7"/>
+                            <constraint firstItem="KiP-Ki-OYE" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" id="kUk-LI-VtA"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="125.5" id="vEv-Sw-IL6"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="P3C-mc-Q9h" secondAttribute="trailing" constant="125.5" id="wXO-a3-8j4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ww-Ip-HVf"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="KiP-Ki-OYE" id="b7f-mk-Pvr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vG5-Dj-nLa" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1423" y="145"/>
         </scene>
     </scenes>
 </document>
