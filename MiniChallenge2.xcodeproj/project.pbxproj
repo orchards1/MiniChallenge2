@@ -31,6 +31,7 @@
 		B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */; };
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
+		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 				B142A97522D880ED0071D2DA /* OnboardingController.swift */,
 				B142A97122D87FBB0071D2DA /* Slide.swift */,
 				B142A97322D87FC80071D2DA /* Slide.xib */,
+				B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */,
 				B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */,
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
 				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
@@ -756,7 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -774,7 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

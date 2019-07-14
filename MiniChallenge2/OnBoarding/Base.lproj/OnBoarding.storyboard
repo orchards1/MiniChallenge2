@@ -19,23 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-wY-GjR">
-                                <rect key="frame" x="179.5" y="800" width="55" height="37"/>
-                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="currentPageIndicatorTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="179.5" y="600" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-ET-GiW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="991"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-mc-Q9h">
-                                <rect key="frame" x="125.5" y="738" width="163" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-mc-Q9h" customClass="GetStarted" customModule="MiniChallenge2" customModuleProvider="target">
+                                <rect key="frame" x="32" y="800" width="350" height="60"/>
+                                <color key="backgroundColor" red="0.13845092058181763" green="0.34076777100563049" blue="0.78827553987503052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="0gc-Ca-PE6"/>
-                                    <constraint firstAttribute="width" constant="163" id="YTV-gP-FJs"/>
+                                    <constraint firstAttribute="height" constant="60" id="0gc-Ca-PE6"/>
+                                    <constraint firstAttribute="width" constant="350" id="YTV-gP-FJs"/>
                                 </constraints>
-                                <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="NEXT"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started"/>
                                 <connections>
+                                    <action selector="pressedNext:" destination="bME-Wr-J1P" eventType="touchUpInside" id="45C-q7-ICk"/>
                                     <segue destination="zb7-PF-OQp" kind="show" id="zhd-FB-gVu"/>
                                 </connections>
                             </button>
@@ -43,17 +45,23 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1U2-wY-GjR" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="0BL-TR-3hB"/>
+                            <constraint firstItem="1U2-wY-GjR" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="179.5" id="2s6-GY-iVW"/>
                             <constraint firstAttribute="bottom" secondItem="lrS-ET-GiW" secondAttribute="bottom" constant="-20" id="Dt2-fB-lFO"/>
-                            <constraint firstItem="1U2-wY-GjR" firstAttribute="top" secondItem="P3C-mc-Q9h" secondAttribute="bottom" constant="20" id="LWj-Zq-q31"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="P3C-mc-Q9h" secondAttribute="trailing" constant="32" id="G1d-fA-k1t"/>
                             <constraint firstItem="lrS-ET-GiW" firstAttribute="centerY" secondItem="0ww-Ip-HVf" secondAttribute="centerY" id="Mgj-ZS-bd3"/>
                             <constraint firstItem="lrS-ET-GiW" firstAttribute="width" secondItem="rsM-Dh-BK2" secondAttribute="width" id="QJI-vf-L8g"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="32" id="Rzg-Sq-MQI"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="bottom" secondItem="P3C-mc-Q9h" secondAttribute="bottom" constant="2" id="X4j-sH-9gN"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="1U2-wY-GjR" secondAttribute="bottom" constant="163" id="a3A-V3-s9K"/>
                             <constraint firstItem="P3C-mc-Q9h" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="bNt-gP-RJv"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="1U2-wY-GjR" secondAttribute="trailing" constant="179.5" id="h7H-f1-KT2"/>
                             <constraint firstItem="lrS-ET-GiW" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="qMm-sQ-0Ni"/>
-                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="694" id="seb-tK-mRS"/>
+                            <constraint firstItem="1U2-wY-GjR" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="556" id="vP4-0i-H3s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0ww-Ip-HVf"/>
                     </view>
                     <connections>
+                        <outlet property="buttonGetStarted" destination="P3C-mc-Q9h" id="uM9-id-iiv"/>
                         <outlet property="nextButton" destination="P3C-mc-Q9h" id="sy1-7h-EOE"/>
                         <outlet property="pageControl" destination="1U2-wY-GjR" id="DTr-oH-Hd1"/>
                         <outlet property="scrollView" destination="lrS-ET-GiW" id="jkA-hE-Ejy"/>

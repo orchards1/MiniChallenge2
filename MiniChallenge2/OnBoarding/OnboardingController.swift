@@ -2,6 +2,10 @@ import UIKit
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
+    @IBOutlet weak var buttonGetStarted: UIButton!
+    @IBAction func pressedNext(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "pernahbuka")
+    }
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{
             scrollView.delegate = self
@@ -12,6 +16,11 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     var slides:[Slide] = [];
     
+    func showbutton(button: UIButton, hidden: Bool) {
+        UIButton.transition(with: button, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            self.nextButton.isHidden = hidden
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.isHidden = true
@@ -36,23 +45,23 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")
-        slide1.labelTitle.text = "A real-life bear"
-        slide1.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide1.labelTitle.text = "Hike Ready!"
+        slide1.labelDesc.text = "Be ready by improving your stamina and strength with us, and become a Mount Conqueror!"
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "ic_onboarding_2")
-        slide2.labelTitle.text = "A real-life bear"
-        slide2.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide2.labelTitle.text = "Scheduled Training"
+        slide2.labelDesc.text = "We provide you with scheduled training that designed to improve your core muscles strength and endurability"
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "ic_onboarding_3")
-        slide3.labelTitle.text = "A real-life bear"
-        slide3.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide3.labelTitle.text = "Progress tracking"
+        slide3.labelDesc.text = "Your physical preparation progress will be tracked, you will know whether you are ready to hike or not"
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide4.imageView.image = UIImage(named: "ic_onboarding_4")
-        slide4.labelTitle.text = "A real-life bear"
-        slide4.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide4.labelTitle.text = "Apple watch required"
+        slide4.labelDesc.text = "This app works simultaneously with Apple Watch. Please install HikeSchool in your Apple Watch before start"
         
         
         let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
@@ -60,7 +69,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         slide5.labelTitle.text = "A real-life bear"
         slide5.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         
-        return [slide1, slide2, slide3, slide4, slide5]
+        return [slide1, slide2, slide3, slide4]
     }
     
     
@@ -85,10 +94,10 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
         
-        if pageControl.currentPage <= 3 {
+        if pageControl.currentPage <= 2 {
             nextButton.isHidden = true
         } else {
-            nextButton.isHidden = false
+            showbutton(button: nextButton, hidden: false)
         }
         
         
@@ -114,22 +123,19 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
          */
         let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         
-        if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
+        if(percentOffset.x > 0 && percentOffset.x <= 0.33) {
             
-            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
-            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
+            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.33-percentOffset.x)/0.33, y: (0.33-percentOffset.x)/0.33)
+            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.33, y: percentOffset.x/0.33)
             
-        } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
-            slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
-            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
+        } else if(percentOffset.x > 0.33 && percentOffset.x <= 0.66) {
+            slides[1].imageView.transform = CGAffineTransform(scaleX: (0.66-percentOffset.x)/0.33, y: (0.66-percentOffset.x)/0.33)
+            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.66, y: percentOffset.x/0.66)
             
-        } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
-            slides[2].imageView.transform = CGAffineTransform(scaleX: (0.75-percentOffset.x)/0.25, y: (0.75-percentOffset.x)/0.25)
-            slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.75, y: percentOffset.x/0.75)
+        } else if(percentOffset.x > 0.66 && percentOffset.x <= 1) {
+            slides[2].imageView.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.33, y: (1-percentOffset.x)/0.33)
+            slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/1, y: percentOffset.x/1)
             
-        } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
-            slides[3].imageView.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.25, y: (1-percentOffset.x)/0.25)
-            slides[4].imageView.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)
         }
     }
     
