@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Mountain" representedClassName="Mountain" syncable="YES" codeGenerationType="class">
+    <entity name="TblMountain" representedClassName="TblMountain" syncable="YES" codeGenerationType="class">
         <attribute name="mountainDesc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mountainName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Mountain" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="TblMountain" positionX="-54" positionY="-9" width="128" height="75"/>
     </elements>
 </model>
