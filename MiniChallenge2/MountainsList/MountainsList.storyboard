@@ -68,7 +68,7 @@
                                             <outlet property="imageMountain" destination="2RN-jN-b46" id="a6J-Rc-aKs"/>
                                             <outlet property="locationLabel" destination="Wc7-06-jfg" id="1f2-EG-430"/>
                                             <outlet property="nameLabel" destination="uJa-Hx-N4k" id="q7M-id-cEf"/>
-                                            <segue destination="3bN-iy-917" kind="show" id="K6D-rW-bMu"/>
+                                            <segue destination="xth-9t-y1u" kind="show" id="YrW-j4-Fer"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -87,12 +87,12 @@
             <point key="canvasLocation" x="1127.536231884058" y="-383.03571428571428"/>
         </scene>
         <!--MountainsDetail-->
-        <scene sceneID="TFo-1L-irE">
+        <scene sceneID="BBa-IA-PfX">
             <objects>
-                <viewControllerPlaceholder storyboardName="MountainsDetail" id="3bN-iy-917" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0wC-2m-h6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MountainsDetail" id="xth-9t-y1u" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrP-LX-zmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="-383"/>
+            <point key="canvasLocation" x="1972" y="-638"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgJ-8w-Xsi">
