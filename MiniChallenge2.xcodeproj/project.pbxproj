@@ -31,6 +31,7 @@
 		B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */; };
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
+		B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */; };
 		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B1C09CB522DC776400612BB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 				B14ABFA622D75DA900D38DDB /* Assets.xcassets */,
 				B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */,
 				B14ABFAB22D75DA900D38DDB /* Info.plist */,
+				B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */,
 			);
 			path = MiniChallenge2;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
 				4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */,
+				B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
 				4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */,
 			);
@@ -931,6 +935,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1C09CB522DC776400612BB2 /* Model.xcdatamodel */,
+			);
+			currentVersion = B1C09CB522DC776400612BB2 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B14ABF9422D75DA900D38DDB /* Project object */;
 }

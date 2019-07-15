@@ -66,14 +66,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satelliteFlyover" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNK-Qo-G8m">
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNK-Qo-G8m">
                                                 <rect key="frame" x="28" y="476" width="358" height="240"/>
                                             </mapView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0A-mL-sJA">
-                                                <rect key="frame" x="28" y="476" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -139,6 +134,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_onboarding_1" width="194.5" height="170"/>
+        <image name="ic_onboarding_1" width="300" height="300"/>
     </resources>
 </document>

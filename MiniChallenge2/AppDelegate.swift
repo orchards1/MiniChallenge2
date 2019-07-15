@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let storyboard = UIStoryboard(name: "MountainsList", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! UIViewController
+        
+        if(UserDefaults.standard.bool(forKey: "pernahbuka") == true)
+        {
+            window?.rootViewController = vc
+        }
+//
+//
+        
         return true
     }
 

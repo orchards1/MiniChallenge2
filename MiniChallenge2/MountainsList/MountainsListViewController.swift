@@ -5,7 +5,7 @@
 //  Created by Marcel W on 12/07/19.
 //  Copyright © 2019 Michael Louis. All rights reserved.
 //
-
+import CoreData
 import UIKit
 
 class MountainsListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
