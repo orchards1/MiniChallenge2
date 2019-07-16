@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Button" backgroundImage="ic_onboarding_1" id="nKs-c1-Lex"/>
+                        <button width="1" alignment="left" title="Button" id="nKs-c1-Lex"/>
                     </items>
                 </controller>
             </objects>
