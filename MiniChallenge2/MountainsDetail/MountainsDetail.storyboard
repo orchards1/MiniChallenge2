@@ -10,28 +10,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mountains Detail View Controller-->
+        <!--View Controller-->
+        <scene sceneID="Ubd-Un-MuA">
+            <objects>
+                <viewController id="IQf-co-NBG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J56-rm-KCm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwC-eL-WUg">
+                                <rect key="frame" x="186" y="180" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7a9-s3-GYu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6S-WG-Gme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="-277"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="SFk-yJ-Hj8">
             <objects>
-                <viewController id="SAJ-GD-epy" customClass="MountainsDetailViewController" customModule="MiniChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MountainsDetail" id="SAJ-GD-epy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dj4-jk-JMQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Z-2i-QcV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="898"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="794"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBP-vg-sU8">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1001"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-Cg-TOO">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="299"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-Cg-TOO">
+                                                <rect key="frame" x="0.0" y="34" width="414" height="299"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="299" id="xbC-Cp-9V5"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Gunung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-NV-RTz">
-                                                <rect key="frame" x="26" y="307" width="320" height="55"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nama Gunung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-NV-RTz">
+                                                <rect key="frame" x="26" y="341" width="320" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="lru-9Q-JhE"/>
                                                 </constraints>
@@ -39,18 +63,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm0-Mt-nFQ">
-                                                <rect key="frame" x="26" y="422" width="320" height="55"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm0-Mt-nFQ">
+                                                <rect key="frame" x="26" y="456" width="320" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="Yng-cg-kUG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deskripsi gunung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu1-xP-o3C">
-                                                <rect key="frame" x="26" y="366" width="134" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -66,23 +84,23 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNK-Qo-G8m">
-                                                <rect key="frame" x="28" y="476" width="358" height="240"/>
-                                            </mapView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Deskripsi gunung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu1-xP-o3C">
+                                                <rect key="frame" x="26" y="422" width="134" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1001" id="36K-dM-yFf"/>
                                             <constraint firstAttribute="width" constant="414" id="6Bx-gj-FMM"/>
-                                            <constraint firstAttribute="trailing" secondItem="YNK-Qo-G8m" secondAttribute="trailing" constant="28" id="6fG-4T-0lR"/>
                                             <constraint firstItem="e3h-Cg-TOO" firstAttribute="leading" secondItem="oBP-vg-sU8" secondAttribute="leading" id="6fv-JG-LTI"/>
-                                            <constraint firstItem="YNK-Qo-G8m" firstAttribute="top" secondItem="of8-gS-7uv" secondAttribute="bottom" constant="50" id="86x-ne-3Qg"/>
                                             <constraint firstItem="Mm0-Mt-nFQ" firstAttribute="top" secondItem="vB8-gr-VlX" secondAttribute="bottom" constant="15" id="9mf-qc-gnd"/>
                                             <constraint firstItem="e3h-Cg-TOO" firstAttribute="top" secondItem="oBP-vg-sU8" secondAttribute="top" id="A6L-Sr-OdC"/>
                                             <constraint firstItem="Mm0-Mt-nFQ" firstAttribute="trailing" secondItem="6hy-NV-RTz" secondAttribute="trailing" id="GBb-He-tEM"/>
                                             <constraint firstItem="of8-gS-7uv" firstAttribute="top" secondItem="Bu1-xP-o3C" secondAttribute="bottom" constant="18" id="Ij3-eK-5JL"/>
                                             <constraint firstItem="6hy-NV-RTz" firstAttribute="top" secondItem="e3h-Cg-TOO" secondAttribute="bottom" constant="8" symbolic="YES" id="Iqh-Qv-cwm"/>
-                                            <constraint firstItem="YNK-Qo-G8m" firstAttribute="leading" secondItem="oBP-vg-sU8" secondAttribute="leading" constant="28" id="K9n-0W-5J2"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="LBR-6C-HFU"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="O9i-cK-C7H"/>
                                             <constraint firstAttribute="trailing" secondItem="Mm0-Mt-nFQ" secondAttribute="trailing" constant="68" id="UxY-oc-qPD"/>
@@ -90,7 +108,6 @@
                                             <constraint firstItem="of8-gS-7uv" firstAttribute="leading" secondItem="Mm0-Mt-nFQ" secondAttribute="leading" id="Xci-9U-lUD"/>
                                             <constraint firstItem="of8-gS-7uv" firstAttribute="leading" secondItem="vB8-gr-VlX" secondAttribute="leading" id="aTC-a3-wy8"/>
                                             <constraint firstItem="of8-gS-7uv" firstAttribute="leading" secondItem="6hy-NV-RTz" secondAttribute="leading" id="d9r-Sd-gRO"/>
-                                            <constraint firstAttribute="bottom" secondItem="YNK-Qo-G8m" secondAttribute="bottom" constant="285" id="gtF-3x-onS"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="lwg-e0-3sJ"/>
                                             <constraint firstItem="Mm0-Mt-nFQ" firstAttribute="top" secondItem="oBP-vg-sU8" secondAttribute="top" constant="422" id="syX-AE-dvj"/>
                                             <constraint firstItem="of8-gS-7uv" firstAttribute="top" secondItem="oBP-vg-sU8" secondAttribute="top" constant="405" id="t0Z-3s-oun"/>
@@ -108,7 +125,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-ae-QQ7">
-                                <rect key="frame" x="165" y="915" width="88" height="36"/>
+                                <rect key="frame" x="165" y="811" width="88" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="Let's Start">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,7 +143,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fN2-Pr-piB"/>
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGP-Th-bUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

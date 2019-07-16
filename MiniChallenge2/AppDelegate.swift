@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let storyboard = UIStoryboard(name: "MountainsList", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! UIViewController
+        let vc = storyboard.instantiateInitialViewController()
         
         if(UserDefaults.standard.bool(forKey: "pernahbuka") == true)
         {
-            window?.rootViewController = vc
+            window?.rootViewController = vc!
         }
 //
 //

@@ -10,6 +10,11 @@ import UIKit
 
 class MountainsListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "test", sender: nil)
+        
+        
+    }
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
     }
@@ -42,6 +47,7 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
     let searchController = UISearchController(searchResultsController: nil)
     var resultsController = UICollectionViewController()
    
+    
     override func viewDidLoad() {
         // Setup the Search Controller
         
