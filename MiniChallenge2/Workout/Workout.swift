@@ -8,9 +8,11 @@
 
 import UIKit
 
-class Workout: UIViewController, UICollectionViewDelegate {
+class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
 
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var workoutCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +23,28 @@ class Workout: UIViewController, UICollectionViewDelegate {
         self.progressBar.layer.cornerRadius = 1.5
         self.progressBar.clipsToBounds = true
         
-        // Do any additional setup after loading the view.
+        
+        // Collection View Cell (Days Icon)
+        workoutCollectionView.delegate = self
+        workoutCollectionView.dataSource = self
+        
+        workoutCollectionView.register(WorkoutCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
+        return CGSize(width: 50, height: 50)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 14
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! WorkoutCollectionViewCell
+        cell.daysIcon.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        return cell
+    }
 
 }

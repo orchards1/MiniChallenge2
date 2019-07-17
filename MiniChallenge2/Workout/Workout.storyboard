@@ -32,11 +32,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ay1-C2-KKc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="edI-NY-I1c" customClass="progressView" customModule="MiniChallenge2" customModuleProvider="target">
+                                                <rect key="frame" x="36" y="27" width="343" height="3"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </progressView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zA0-09-CII">
-                                                <rect key="frame" x="0.0" y="68" width="414" height="58"/>
+                                                <rect key="frame" x="0.0" y="47" width="414" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rh6-Yu-V4q">
@@ -46,8 +50,8 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="msd-BJ-IG5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="msd-BJ-IG5">
+                                                        <rect key="frame" x="0.0" y="6" width="58" height="58"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
@@ -56,10 +60,6 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="edI-NY-I1c" customClass="progressView" customModule="MiniChallenge2" customModuleProvider="target">
-                                                <rect key="frame" x="36" y="27" width="343" height="3"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </progressView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -73,6 +73,7 @@
                     <navigationItem key="navigationItem" title="My Progress" id="UbY-E3-NDa"/>
                     <connections>
                         <outlet property="progressBar" destination="edI-NY-I1c" id="TuT-k8-q6f"/>
+                        <outlet property="workoutCollectionView" destination="zA0-09-CII" id="PlX-Hh-4jq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrX-b9-Ns1" userLabel="First Responder" sceneMemberID="firstResponder"/>

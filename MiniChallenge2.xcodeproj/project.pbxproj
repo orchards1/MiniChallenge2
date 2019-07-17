@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		45B32AB322DC5BDD00485C27 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B32AB222DC5BDD00485C27 /* Workout.storyboard */; };
 		45B32AB522DC714D00485C27 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B32AB422DC714D00485C27 /* Workout.swift */; };
-		45B32AE722DF019E00485C27 /* WorkoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B32AE622DF019E00485C27 /* WorkoutCollectionViewController.swift */; };
+		45B32AEA22DF0EF400485C27 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */; };
+		45B32AEB22DF0EF400485C27 /* WorkoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B32AE922DF0EF400485C27 /* WorkoutCollectionViewCell.xib */; };
 		4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */; };
 		4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2922D8C393000C31ED /* Mountain.swift */; };
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
@@ -97,7 +98,8 @@
 /* Begin PBXFileReference section */
 		45B32AB222DC5BDD00485C27 /* Workout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
 		45B32AB422DC714D00485C27 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		45B32AE622DF019E00485C27 /* WorkoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewController.swift; sourceTree = "<group>"; };
+		45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		45B32AE922DF0EF400485C27 /* WorkoutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutCollectionViewCell.xib; sourceTree = "<group>"; };
 		4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsListViewController.swift; sourceTree = "<group>"; };
 		4B7ADC2922D8C393000C31ED /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 			children = (
 				45B32AB222DC5BDD00485C27 /* Workout.storyboard */,
 				45B32AB422DC714D00485C27 /* Workout.swift */,
-				45B32AE622DF019E00485C27 /* WorkoutCollectionViewController.swift */,
+				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
+				45B32AE922DF0EF400485C27 /* WorkoutCollectionViewCell.xib */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B32AEB22DF0EF400485C27 /* WorkoutCollectionViewCell.xib in Resources */,
 				45B32AB322DC5BDD00485C27 /* Workout.storyboard in Resources */,
 				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
@@ -496,9 +500,9 @@
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
 				4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */,
 				B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */,
+				45B32AEA22DF0EF400485C27 /* WorkoutCollectionViewCell.swift in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
 				4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */,
-				45B32AE722DF019E00485C27 /* WorkoutCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
