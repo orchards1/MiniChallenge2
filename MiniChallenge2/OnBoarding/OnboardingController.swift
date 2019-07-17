@@ -3,9 +3,7 @@ import UIKit
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var buttonGetStarted: UIButton!
-    @IBAction func pressedNext(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: "pernahbuka")
-    }
+    
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{
             scrollView.delegate = self
@@ -13,6 +11,13 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextButton: UIButton!
+    @IBAction func nextButtonDidTapped(_ sender: Any) {
+        //Function pindah page pake present
+        UserDefaults.standard.set(true, forKey: "pernahbuka")
+        let storyboard = UIStoryboard(name: "MountainsList", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() else { return }
+        present(vc, animated: true, completion: nil)
+    }
     
     var slides:[Slide] = [];
     
@@ -40,8 +45,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     
     func createSlides() -> [Slide] {
-        
-        // EDIT DATA ONBOARDING DISINI
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")

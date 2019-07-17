@@ -19,13 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-wY-GjR">
-                                <rect key="frame" x="179.5" y="600" width="55" height="37"/>
+                                <rect key="frame" x="179.5" y="743" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-ET-GiW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="991"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-ET-GiW">
+                                <rect key="frame" x="0.0" y="-10" width="414" height="926"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNO-6b-R8N">
+                                <rect key="frame" x="340" y="64" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="fuG-kR-fYE"/>
+                                    <constraint firstAttribute="height" constant="44" id="wwX-cw-nFN"/>
+                                </constraints>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="bME-Wr-J1P" eventType="touchUpInside" id="qld-3C-tWr"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-mc-Q9h" customClass="GetStarted" customModule="MiniChallenge2" customModuleProvider="target">
                                 <rect key="frame" x="32" y="800" width="350" height="60"/>
                                 <color key="backgroundColor" red="0.13845092058181763" green="0.34076777100563049" blue="0.78827553987503052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -37,8 +48,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
-                                    <action selector="pressedNext:" destination="bME-Wr-J1P" eventType="touchUpInside" id="45C-q7-ICk"/>
-                                    <segue destination="zb7-PF-OQp" kind="show" id="zhd-FB-gVu"/>
+                                    <action selector="nextButtonDidTapped:" destination="bME-Wr-J1P" eventType="touchUpInside" id="7eD-3b-2Wq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,11 +62,12 @@
                             <constraint firstItem="lrS-ET-GiW" firstAttribute="width" secondItem="rsM-Dh-BK2" secondAttribute="width" id="QJI-vf-L8g"/>
                             <constraint firstItem="P3C-mc-Q9h" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="32" id="Rzg-Sq-MQI"/>
                             <constraint firstItem="0ww-Ip-HVf" firstAttribute="bottom" secondItem="P3C-mc-Q9h" secondAttribute="bottom" constant="2" id="X4j-sH-9gN"/>
-                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="1U2-wY-GjR" secondAttribute="bottom" constant="163" id="a3A-V3-s9K"/>
                             <constraint firstItem="P3C-mc-Q9h" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="bNt-gP-RJv"/>
+                            <constraint firstItem="PNO-6b-R8N" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="20" id="cgY-YX-i1G"/>
                             <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="1U2-wY-GjR" secondAttribute="trailing" constant="179.5" id="h7H-f1-KT2"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="PNO-6b-R8N" secondAttribute="trailing" constant="30" id="oQt-NR-dmN"/>
                             <constraint firstItem="lrS-ET-GiW" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="qMm-sQ-0Ni"/>
-                            <constraint firstItem="1U2-wY-GjR" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="556" id="vP4-0i-H3s"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="1U2-wY-GjR" secondAttribute="bottom" constant="20" id="rlH-KM-gIW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0ww-Ip-HVf"/>
                     </view>
@@ -70,14 +81,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vG5-Dj-nLa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1421.7391304347827" y="144.64285714285714"/>
-        </scene>
-        <!--MountainsList-->
-        <scene sceneID="AY3-4b-K6l">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MountainsList" storyboardName="MountainsList" id="zb7-PF-OQp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cNG-2P-9zY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2120" y="-50"/>
         </scene>
     </scenes>
 </document>
