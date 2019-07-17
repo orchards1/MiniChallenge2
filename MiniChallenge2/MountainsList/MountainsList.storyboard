@@ -92,8 +92,8 @@
         <!--MountainsDetail-->
         <scene sceneID="mVt-QN-FJh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7u-uE-fq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="MountainsDetail" id="E42-YM-ivz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7u-uE-fq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1879" y="-562"/>
         </scene>

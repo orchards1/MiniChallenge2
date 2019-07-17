@@ -47,6 +47,10 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
     let searchController = UISearchController(searchResultsController: nil)
     var resultsController = UICollectionViewController()
    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
     
     override func viewDidLoad() {
         // Setup the Search Controller
@@ -125,47 +129,3 @@ extension MountainsListViewController: UISearchBarDelegate {
 }
 
 
-//Set Data
-//        newMountain.setValue("Mt. Semeru", forKey: "mountainName")
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Failed saving")
-//        }
-//        newMountain.setValue("Mt. Gede", forKey: "mountainName")
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Failed saving")
-//        }
-//        newMountain.setValue("Mt. Pangrango", forKey: "mountainName")
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Failed saving")
-//        }
-//        newMountain.setValue("Mt. Suparman", forKey: "mountainName")
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Failed saving")
-//        }
-//        newMountain.setValue("Mt. Sukirman", forKey: "mountainName")
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Failed saving")
-//        }
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "DBMountain")
-//        //request.predicate = NSPredicate(format: "age = %@", "12")
-//        request.returnsObjectsAsFaults = false
-//        do {
-//            let result = try context.fetch(request)
-//            for data in result as! [NSManagedObject] {
-//                print(data.value(forKey: "mountainName") as! String)
-//            }
-//
-//        } catch {
-//
-//            print("Failed")
-//        }
