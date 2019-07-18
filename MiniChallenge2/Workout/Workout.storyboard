@@ -128,14 +128,59 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-1U-Vhy">
+                                <rect key="frame" x="0.0" y="405" width="414" height="491"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="V6D-mJ-hZl"/>
+                                    <constraint firstAttribute="height" constant="491" id="nVW-cJ-9nD"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="90" id="3zB-HU-Bgr" customClass="TableViewCell" customModule="MiniChallenge2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3zB-HU-Bgr" id="Pmv-mS-J6Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-Gs-ZYa">
+                                                    <rect key="frame" x="344" y="29" width="34" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="View"/>
+                                                    <connections>
+                                                        <action selector="viewVideoPressed:" destination="3zB-HU-Bgr" eventType="touchUpInside" id="19i-Wz-f73"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLl-Ch-zyF">
+                                                    <rect key="frame" x="26" y="20" width="258" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelName" destination="CLl-Ch-zyF" id="JN1-UJ-aPV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4EF-1U-Vhy" firstAttribute="trailing" secondItem="8TW-pU-yhp" secondAttribute="trailing" id="5a7-ub-g4o"/>
+                            <constraint firstAttribute="bottom" secondItem="4EF-1U-Vhy" secondAttribute="bottom" id="7G7-KG-Evc"/>
+                            <constraint firstItem="4EF-1U-Vhy" firstAttribute="leading" secondItem="8TW-pU-yhp" secondAttribute="leading" id="Zsv-EA-WL9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8TW-pU-yhp"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Progress" id="UbY-E3-NDa"/>
                     <connections>
                         <outlet property="progressBar" destination="edI-NY-I1c" id="TuT-k8-q6f"/>
                         <outlet property="workoutCollectionView" destination="zA0-09-CII" id="PlX-Hh-4jq"/>
+                        <outlet property="workoutTableView" destination="4EF-1U-Vhy" id="BML-6F-md8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrX-b9-Ns1" userLabel="First Responder" sceneMemberID="firstResponder"/>

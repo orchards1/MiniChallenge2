@@ -136,6 +136,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yji-RT-oU2" kind="show" id="q8t-Vn-4wv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,6 +158,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGP-Th-bUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="-25.446428571428569"/>
+        </scene>
+        <!--Workout-->
+        <scene sceneID="p1z-qA-oT1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workout" id="yji-RT-oU2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buM-O8-emR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="-75"/>
         </scene>
     </scenes>
     <resources>

@@ -48,4 +48,6 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         return cell
     }
+    
+    
 }
