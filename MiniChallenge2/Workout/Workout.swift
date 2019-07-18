@@ -8,11 +8,15 @@
 
 import UIKit
 
-class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
-
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UserDefaults.standard.set(true, forKey: "sudahmilih")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,5 +50,6 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         cell.daysIcon.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         return cell
     }
-
+    
+    
 }

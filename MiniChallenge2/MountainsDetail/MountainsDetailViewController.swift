@@ -18,6 +18,10 @@ class MountainsDetailViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         self.title = "Mount Gede"
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 
     /*
     // MARK: - Navigation
