@@ -10,7 +10,6 @@ import UIKit
 
 class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
     
@@ -27,7 +26,7 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         // Collection View Cell (Days Icon)
         workoutCollectionView.delegate = self
         workoutCollectionView.dataSource = self
-        
+        workoutCollectionView.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
         workoutCollectionView.register(WorkoutCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
     }
 
@@ -38,13 +37,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! WorkoutCollectionViewCell
-        cell.daysIcon.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        cell.daysIcon.backgroundColor = .blue
+        
+        
+        
         return cell
     }
-
 }

@@ -39,9 +39,10 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
             daysIcon.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             daysIcon.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
             ])
+        
         self.daysIcon = daysIcon
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
