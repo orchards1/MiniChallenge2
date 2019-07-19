@@ -1,4 +1,5 @@
 import UIKit
+import HealthKit
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
@@ -20,6 +21,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     var slides:[Slide] = [];
+    let healthStore = HKHealthStore()
     
     func showbutton(button: UIButton, hidden: Bool) {
         UIButton.transition(with: button, duration: 0.5, options: .transitionCrossDissolve, animations: {
@@ -28,6 +30,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkHealthKitAuthorization()
         nextButton.isHidden = true
         slides = createSlides()
         setupSlideScrollView(slides: slides)
@@ -43,6 +46,19 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    func checkHealthKitAuthorization() {
+        if HKHealthStore.isHealthDataAvailable(){
+            let infoToRead = Set([HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning), HKSampleType.quantityType(forIdentifier: .activeEnergyBurned), HKSampleType.quantityType(forIdentifier: .heartRate), HKSampleType.quantityType(forIdentifier: .stepCount)])
+            let infoToShare = Set([HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning), HKObjectType.quantityType(forIdentifier: .activeEnergyBurned), HKObjectType.quantityType(forIdentifier: .heartRate), HKObjectType.quantityType(forIdentifier: .stepCount)])
+            
+            healthStore.requestAuthorization(toShare: infoToShare as? Set<HKSampleType>, read: infoToRead as? Set<HKObjectType>) { (success, error) in
+                //something
+                print("succeded")
+            }
+        }else{
+            
+        }
+    }
     
     func createSlides() -> [Slide] {
         

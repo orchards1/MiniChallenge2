@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import HealthKit
 
 class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+
+    @IBAction func refreshButtonDidTap(_ sender: Any) {
+        fire()
+    }
+    @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
+    let healthManager = HKHealthStore()
+    var counts = 0.0
+    var counts2 = 0.0
+    var Kkal:Double = 0.0
+    var today = Calendar.current
+    var step: HKQuantityType? = HKObjectType.quantityType(forIdentifier: .stepCount)
+    @objc func fire()
+    {
+        let earlyDate = today.startOfDay(for: Date())
+        fetchHeartRates(endTime: NSDate(), startTime: earlyDate as NSDate)
+    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewDidLoad() {        UserDefaults.standard.set(true, forKey: "sudahmilih")
+                super.viewDidLoad()
+        fire()
+        
         // Progress Bar Customization
         self.progressBar.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         self.progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
@@ -27,9 +45,45 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         workoutCollectionView.delegate = self
         workoutCollectionView.dataSource = self
         workoutCollectionView.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
+    
         workoutCollectionView.register(WorkoutCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
     }
+    class func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
+        
+    }
 
+
+    func fetchHeartRates(endTime: NSDate, startTime: NSDate){
+        counts = 0.0
+        guard let sampleType = HKObjectType.quantityType(forIdentifier: .activeEnergyBurned) else { return }
+        let predicate = HKQuery.predicateForSamples(withStart: startTime as Date, end: endTime as Date, options: [])
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+        let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: 10000, sortDescriptors: [sortDescriptor])
+        { (query, results, error) in
+            if error != nil {
+                print("An error has occured with the following description: \(error?.localizedDescription)")
+            } else {
+                for r in results! {
+                    let result = r as! HKQuantitySample
+                    let quantity = result.quantity
+                    let count = quantity.doubleValue(for: .kilocalorie())
+//                    let count2 = quantity.doubleValue(for: .meter())
+                    self.counts = self.counts + count
+//                    self.counts2 = self.counts2 + count2
+                    DispatchQueue.main.async {
+                        self.kkalLabel.text = String(format:"%.2f Kcal",self.counts)
+                    }
+                }
+            }
+            print(self.counts)
+        }
+        healthManager.execute(query)
+    }
+    func setlabel(value:Double)
+    {
+        self.kkalLabel.text = String("\(value) Kkal")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
         return CGSize(width: 50, height: 50)

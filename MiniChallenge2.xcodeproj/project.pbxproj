@@ -15,6 +15,8 @@
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
+		B13F090122E0775900EF2F07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F090022E0775900EF2F07 /* HealthKit.framework */; };
+		B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F090422E09E3300EF2F07 /* CornerRadius.swift */; };
 		B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14148A622DF34EB006D3598 /* VideoPlayer.swift */; };
 		B14148A922DF3621006D3598 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14148A822DF3621006D3598 /* TableViewCell.swift */; };
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
@@ -24,7 +26,6 @@
 		B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */; };
 		B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFA122D75DA900D38DDB /* ViewController.swift */; };
 		B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA322D75DA900D38DDB /* OnBoarding.storyboard */; };
-		B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA622D75DA900D38DDB /* Assets.xcassets */; };
 		B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */; };
 		B14ABFB522D75DAA00D38DDB /* MiniChallenge2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFB422D75DAA00D38DDB /* MiniChallenge2Tests.swift */; };
 		B14ABFC022D75DAA00D38DDB /* MiniChallenge2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFBF22D75DAA00D38DDB /* MiniChallenge2UITests.swift */; };
@@ -36,6 +37,7 @@
 		B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */; };
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
+		B1821B5C22E1D83B009F23C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1821B5B22E1D83B009F23C3 /* Assets.xcassets */; };
 		B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */; };
 		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +107,9 @@
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
+		B13F08FE22E0775900EF2F07 /* MiniChallenge2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniChallenge2.entitlements; sourceTree = "<group>"; };
+		B13F090022E0775900EF2F07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B13F090422E09E3300EF2F07 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		B14148A622DF34EB006D3598 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		B14148A822DF3621006D3598 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
@@ -115,7 +120,6 @@
 		B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14ABFA122D75DA900D38DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B14ABFA422D75DA900D38DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnBoarding.storyboard; sourceTree = "<group>"; };
-		B14ABFA622D75DA900D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14ABFA922D75DA900D38DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B14ABFAB22D75DA900D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFB022D75DAA00D38DDB /* MiniChallenge2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,7 @@
 		B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B1821B5B22E1D83B009F23C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C09CB522DC776400612BB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13F090122E0775900EF2F07 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,11 +183,18 @@
 				45B32AB222DC5BDD00485C27 /* Workout.storyboard */,
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
-				45B32AE922DF0EF400485C27 /* WorkoutCollectionViewCell.xib */,
 				B14148A622DF34EB006D3598 /* VideoPlayer.swift */,
 				B14148A822DF3621006D3598 /* TableViewCell.swift */,
 			);
 			path = Workout;
+			sourceTree = "<group>";
+		};
+		B13F08FF22E0775900EF2F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B13F090022E0775900EF2F07 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B142A96E22D874B40071D2DA /* MountainsDetail */ = {
@@ -196,12 +209,14 @@
 		B14ABF9322D75DA900D38DDB = {
 			isa = PBXGroup;
 			children = (
+				B1821B5B22E1D83B009F23C3 /* Assets.xcassets */,
 				B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */,
 				B14ABFB322D75DAA00D38DDB /* MiniChallenge2Tests */,
 				B14ABFBE22D75DAA00D38DDB /* MiniChallenge2UITests */,
 				B14ABFC822D75DAA00D38DDB /* MiniChallenge2 WatchKit App */,
 				B14ABFD722D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */,
 				B14ABF9D22D75DA900D38DDB /* Products */,
+				B13F08FF22E0775900EF2F07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,13 +235,13 @@
 		B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */ = {
 			isa = PBXGroup;
 			children = (
+				B13F08FE22E0775900EF2F07 /* MiniChallenge2.entitlements */,
 				45B32AB122DC5BC200485C27 /* Workout */,
 				B142A96E22D874B40071D2DA /* MountainsDetail */,
 				B14AC00822D8736600D38DDB /* MountainsList */,
 				B14AC00722D8732B00D38DDB /* OnBoarding */,
 				B14ABF9F22D75DA900D38DDB /* AppDelegate.swift */,
 				B14ABFA122D75DA900D38DDB /* ViewController.swift */,
-				B14ABFA622D75DA900D38DDB /* Assets.xcassets */,
 				B14ABFA822D75DA900D38DDB /* LaunchScreen.storyboard */,
 				B14ABFAB22D75DA900D38DDB /* Info.plist */,
 				B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */,
@@ -294,6 +309,7 @@
 				4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */,
 				B142A96A22D873EF0071D2DA /* MountainsList.storyboard */,
 				4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */,
+				B13F090422E09E3300EF2F07 /* CornerRadius.swift */,
 			);
 			path = MountainsList;
 			sourceTree = "<group>";
@@ -402,6 +418,14 @@
 				TargetAttributes = {
 					B14ABF9B22D75DA900D38DDB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					B14ABFAF22D75DAA00D38DDB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -450,7 +474,7 @@
 				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
 				B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */,
-				B14ABFA722D75DA900D38DDB /* Assets.xcassets in Resources */,
+				B1821B5C22E1D83B009F23C3 /* Assets.xcassets in Resources */,
 				B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */,
 				B14ABFA522D75DA900D38DDB /* OnBoarding.storyboard in Resources */,
 			);
@@ -496,6 +520,7 @@
 			files = (
 				B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */,
 				B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */,
+				B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */,
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
 				B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */,
 				45B32AB522DC714D00485C27 /* Workout.swift in Sources */,
@@ -718,7 +743,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -740,7 +765,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -759,7 +784,7 @@
 				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -778,7 +803,7 @@
 				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -792,6 +817,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U4NGP5AAN;
@@ -800,7 +826,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -812,6 +838,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U4NGP5AAN;
@@ -820,7 +847,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michaellouis.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

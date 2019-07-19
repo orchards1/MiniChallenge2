@@ -32,12 +32,13 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
         mountainCollectionView.reloadData()
     }
 
+    let mountainListCollectionViewCell = MountainListCollectionViewCell()
     @IBOutlet weak var mountainCollectionView: UICollectionView!
     
-    var arrayImage = [UIImage(named: "ic_onboarding_1"), UIImage(named: "ic_onboarding_2"), UIImage(named: "ic_onboarding_3"), UIImage(named: "ic_onboarding_4"), UIImage(named: "ic_onboarding_5")]
-    var arrayMountainName = ["Semeru", "Gede", "Pangrango", "Suparman", "Sukirman"]
-    var arrayLocation = ["East Java, Java Island", "Location, Island", "Location, Island", "Location, Island", "Location, Island"]
-    var arrayAltitude = ["3676 mdpl", "0012 mdpl", "2312 mdpl", "1012 mdpl", "1921 mdpl"]
+    var arrayImage = [UIImage(named: "gunung1"), UIImage(named: "gunung2"), UIImage(named: "gunung3"), UIImage(named: "gunung4"), UIImage(named: "gunung5") , UIImage(named: "gunung6")]
+    var arrayMountainName = ["Bromo", "Gede", "Merapi", "Semeru", "Sumbing" , "Sundoro"]
+    var arrayLocation = ["Pasuruan, East Java", "Cianjur Regency, West Java", "Boyolali Regency, Central Java", "Lumajang Regency, East Java", "Wonosobo Regency, Central Java" ,"Wonosobo Regency, Central Java"]
+    var arrayAltitude = ["2329 mdpl", "2958 mdpl", "2930 mdpl", "3676 mdpl", "3371 mdpl","3136 mdpl"]
     
     var searchMountain = [String]()
     var filteredMountain = [Mountain]()
@@ -59,7 +60,6 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
         searchController.searchBar.placeholder = "Search Mountains"
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -97,7 +97,7 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? MountainListCollectionViewCell
         
         let mountain: Mountain
-        
+        let shadowPath2 = UIBezierPath(rect: cell!.bounds)
         if isFiltering() {
             mountain = filteredMountain[indexPath.row]
         } else {
@@ -105,10 +105,16 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
         }
         
         cell?.imageMountain!.image = mountain.mountainImg
+        cell?.imageMountain.layer.cornerRadius = 20
         cell?.nameLabel!.text = mountain.name
         cell?.locationLabel!.text = mountain.location
         cell?.heightLabel!.text = mountain.altitude
-        
+
+        cell?.layer.masksToBounds = false
+        cell?.layer.shadowColor = UIColor.black.cgColor
+        cell?.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(3.0))
+        cell?.layer.shadowOpacity = 0.5
+        cell?.layer.shadowPath = shadowPath2.cgPath
         return cell!
     }
 
