@@ -11,6 +11,27 @@ import HealthKit
 
 class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
+        return CGSize(width: 50, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! WorkoutCollectionViewCell
+        
+        if (indexPath.row < 3 || indexPath.row > 16) {
+            cell.daysIcon.backgroundColor = .clear
+        } else {
+            cell.daysIcon.image = UIImage(named: "\(indexPath.row - 2)inactive")
+            
+        }
+        return cell
+    }
 
     @IBAction func refreshButtonDidTap(_ sender: Any) {
         fire()
@@ -18,6 +39,7 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
+    @IBOutlet weak var workoutTableView: UITableView!
     let healthManager = HKHealthStore()
     var counts = 0.0
     var counts2 = 0.0
@@ -45,8 +67,12 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         workoutCollectionView.delegate = self
         workoutCollectionView.dataSource = self
         workoutCollectionView.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
-    
         workoutCollectionView.register(WorkoutCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        
+        // Table View Cell
+        workoutTableView.delegate = self
+        workoutTableView.dataSource = self
+        workoutTableView.register(WorkoutTableViewCell.self, forCellReuseIdentifier: "tableCell")
     }
     class func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
         
@@ -84,24 +110,22 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         self.kkalLabel.text = String("\(value) Kkal")
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
-        return CGSize(width: 50, height: 50)
+}
+extension Workout: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! WorkoutCollectionViewCell
-        cell.daysIcon.backgroundColor = .blue
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         
-        
+        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
         
         return cell
     }
-    
-    
 }

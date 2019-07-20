@@ -64,7 +64,6 @@ class MountainsListViewController: UIViewController, UICollectionViewDelegate, U
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "DBMountain", in: context)
-        let newMountain = NSManagedObject(entity: entity!, insertInto: context)
         super.viewDidLoad()
 //        resultsController.collectionView.delegate = self
         mountainCollectionView.delegate = self

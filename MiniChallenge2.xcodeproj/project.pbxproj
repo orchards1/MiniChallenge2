@@ -38,6 +38,7 @@
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
 		B1821B5C22E1D83B009F23C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1821B5B22E1D83B009F23C3 /* Assets.xcassets */; };
+		B1821B6022E2E2AC009F23C3 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1821B5F22E2E2AC009F23C3 /* WorkoutTableViewCell.swift */; };
 		B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */; };
 		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
 /* End PBXBuildFile section */
@@ -140,6 +141,7 @@
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B1821B5B22E1D83B009F23C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1821B5F22E2E2AC009F23C3 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTableViewCell.swift; path = "../../../../Desktop/MiniChallenge2 2/MiniChallenge2/Workout/WorkoutTableViewCell.swift"; sourceTree = "<group>"; };
 		B1C09CB522DC776400612BB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 		45B32AB122DC5BC200485C27 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				B1821B5F22E2E2AC009F23C3 /* WorkoutTableViewCell.swift */,
 				45B32AB222DC5BDD00485C27 /* Workout.storyboard */,
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
@@ -521,6 +524,7 @@
 				B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */,
 				B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */,
 				B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */,
+				B1821B6022E2E2AC009F23C3 /* WorkoutTableViewCell.swift in Sources */,
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
 				B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */,
 				45B32AB522DC714D00485C27 /* Workout.swift in Sources */,
