@@ -13,12 +13,12 @@
 		4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */; };
 		4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2922D8C393000C31ED /* Mountain.swift */; };
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
+		B135A24222E2F481003E1EB2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135A24122E2F481003E1EB2 /* Activities.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
 		B13F090122E0775900EF2F07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F090022E0775900EF2F07 /* HealthKit.framework */; };
 		B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F090422E09E3300EF2F07 /* CornerRadius.swift */; };
 		B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14148A622DF34EB006D3598 /* VideoPlayer.swift */; };
-		B14148A922DF3621006D3598 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14148A822DF3621006D3598 /* TableViewCell.swift */; };
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
 		B142A97222D87FBB0071D2DA /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142A97122D87FBB0071D2DA /* Slide.swift */; };
 		B142A97422D87FC80071D2DA /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B142A97322D87FC80071D2DA /* Slide.xib */; };
@@ -106,13 +106,13 @@
 		4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsListViewController.swift; sourceTree = "<group>"; };
 		4B7ADC2922D8C393000C31ED /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
+		B135A24122E2F481003E1EB2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
 		B13F08FE22E0775900EF2F07 /* MiniChallenge2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniChallenge2.entitlements; sourceTree = "<group>"; };
 		B13F090022E0775900EF2F07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B13F090422E09E3300EF2F07 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		B14148A622DF34EB006D3598 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
-		B14148A822DF3621006D3598 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
 		B142A97122D87FBB0071D2DA /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		B142A97322D87FC80071D2DA /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
 				B14148A622DF34EB006D3598 /* VideoPlayer.swift */,
-				B14148A822DF3621006D3598 /* TableViewCell.swift */,
+				B135A24122E2F481003E1EB2 /* Activities.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -521,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B135A24222E2F481003E1EB2 /* Activities.swift in Sources */,
 				B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */,
 				B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */,
 				B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */,
@@ -528,7 +529,6 @@
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
 				B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */,
 				45B32AB522DC714D00485C27 /* Workout.swift in Sources */,
-				B14148A922DF3621006D3598 /* TableViewCell.swift in Sources */,
 				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
 				4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,

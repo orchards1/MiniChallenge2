@@ -44,6 +44,7 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     var counts = 0.0
     var counts2 = 0.0
     var Kkal:Double = 0.0
+    var activities = [Activities]()
     var today = Calendar.current
     var step: HKQuantityType? = HKObjectType.quantityType(forIdentifier: .stepCount)
     @objc func fire()
@@ -55,6 +56,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     override func viewDidLoad() {        UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
+        var arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]
+        var arraycurrent = [0,0,0]
+        var arraymax = [20,20,20]
+        for i in 0..<arrayActivityName.count{
+            let data = Activities(name: arrayActivityName[i], current: arraycurrent[i], max: arraymax[0])
+            activities.append(data)
+        }
+        
+        
         
         // Progress Bar Customization
         self.progressBar.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
@@ -118,14 +128,16 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WorkoutTableViewCell
         
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-        
+        let activity: Activities
+            activity = activities[indexPath.row]
+        cell.nameLabel.text = activity.name
+        cell.countLabel.text = String("\(activity.current) / \(activity.max) ")
         return cell
     }
 }
